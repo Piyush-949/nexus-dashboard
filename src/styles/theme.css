@@ -1,0 +1,37 @@
+:root {
+    /* Colors */
+    --bg-void: #050505;
+    --bg-glass: rgba(255, 255, 255, 0.03);
+    --bg-glass-hover: rgba(255, 255, 255, 0.08);
+
+    --primary: #00f3ff;
+    --primary-glow: rgba(0, 243, 255, 0.5);
+
+    --secondary: #bc13fe;
+    --secondary-glow: rgba(188, 19, 254, 0.5);
+
+    --text-main: #ffffff;
+    --text-dim: #888888;
+
+    /* Borders */
+    --border-glass: rgba(255, 255, 255, 0.1);
+    --border-neon: rgba(0, 243, 255, 0.2);
+
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 48px;
+
+    /* Effects */
+    --backdrop-blur: 20px;
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    background-color: var(--bg-void);
+    color: var(--text-main);
+    overflow: hidden;
+    /* Prevent scroll for dashboard feel */
+}

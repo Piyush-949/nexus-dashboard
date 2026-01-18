@@ -1,0 +1,27 @@
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .layout-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        height: auto;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-md);
+    }
+}
